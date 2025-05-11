@@ -9,7 +9,7 @@ app = FastAPI()
 
 model = YOLO("models/yolo11n.pt").to("cuda")
 
-
+    
 def visualize(img, boxes):
     for box in boxes:
         x1, y1, x2, y2 = map(int, box.xyxy[0])
