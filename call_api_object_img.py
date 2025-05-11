@@ -4,7 +4,7 @@ import cv2
 import numpy as np
 from ultralytics import YOLO
 import io
-
+import os
 app = FastAPI()
 
 model = YOLO("models/yolo11n.pt").to("cuda")
